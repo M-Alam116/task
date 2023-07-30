@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  margin-top: 2rem;
+  background: rgb(3, 3, 67);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  list-style: none;
+  color: white;
+  padding: 10px;
+}
+
+.task h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.task p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.task button {
+  background: orange;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.task span {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .task {
+    grid-template-columns: 100%;
+  }
+}
